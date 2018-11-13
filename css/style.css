@@ -1,0 +1,55 @@
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+
+img {
+  border-radius: 5%;
+}
+
+h1 {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-size: 42px;
+  color: white;
+  padding-bottom: 15px;
+}
+
+input {
+  width: 75%;
+  height: 30px;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-size: 90%;
+  margin-bottom: 15px;
+}
+
+.zip-input {
+  margin-right: 4px;
+}
+
+input:focus {
+  border: 5px solid #ccc;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10%;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
