@@ -15,7 +15,7 @@ function append(parent, el) {
   return parent.childElement(el);
 }
 
-let search = () => {
+function search(zip){
   fetch(url) //Fetch API data from url
     .then((resp) => resp.json()) //Transform reqeust into JSON
     .then(function(data) {
@@ -27,8 +27,8 @@ let search = () => {
       is ${weather.main.temp}. Outside it is ${weather.weather.description}.`;
         append(li, span);
         append(ul, li);
-      })
-    })
+      });
+    });
 
     .catch(function(error) {
       console.log(error);
