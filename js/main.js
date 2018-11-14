@@ -15,7 +15,7 @@ function append(parent, el) {
   return parent.childElement(el);
 }
 
-function search(zip){
+document.getElementById("submit").addEventListener("click", function search(zip){
   fetch(url) //Fetch API data from url
     .then((resp) => resp.json()) //Transform reqeust into JSON
     .then(function(data) {
@@ -33,5 +33,4 @@ function search(zip){
     .catch(function(error) {
       console.log(error);
     });
-
-}
+});
