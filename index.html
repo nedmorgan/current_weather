@@ -16,10 +16,11 @@
       <h1 class="web-title">What's the weather today?</h1>
       <input class="zip-input" id="zip" placeholder="Please enter your 5 digit zip code (U.S. only)">
       <br>
-      <button id="submit" type="submit">Submit</button>
+      <button id="submit" type="submit" onclick="search()">Submit</button>
     </div>
-    <div class="daily-weather-container">
-    </div>
+  </div>
+  <div class="daily-weather-container">
+    <ul id="weatherItems"></ul>
   </div>
   <script type="javascript" src="js/main.js"></script>
   <script type="javascript" src="js/config.js"></script>

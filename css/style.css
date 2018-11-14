@@ -7,7 +7,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -70%);
+  transform: translate(-50%, -65%);
 }
 
 img {
@@ -52,4 +52,11 @@ button {
 button:hover {
   background-color: black;
   color: white;
+}
+
+.daily-weather-container {
+  height: 25%;
+  width: 40%;
+  margin: 0 auto;
+  border: 5px black solid;
 }
