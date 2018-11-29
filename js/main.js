@@ -17,7 +17,7 @@ function append(parent, el) {
 
 document.getElementById("submit").addEventListener("click", function search(zip){
   fetch(url) //Fetch API data from url
-    .then((resp) => resp.json()) //Transform reqeust into JSON
+    .then((resp) => resp.json())//Transform reqeust into JSON
     .then(function(data) {
       let weather = data.results;
       return weather.map(function(weather) {
