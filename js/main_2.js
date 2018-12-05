@@ -1,5 +1,3 @@
-//import configKey from 'js/config.js';
-
 $(document).ready(function() {
   console.log("ready");
 
