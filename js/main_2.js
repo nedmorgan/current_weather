@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 $(document).ready(function () {
   console.log("ready");
 
@@ -6,7 +8,7 @@ $(document).ready(function () {
     if (zip !== "") {
       $.ajax({
         type: "GET",
-        url: `http://api.openweathermap.org/data/2.5/weather?zip=${zip},us&units=imperial&appid=${config.myKey}`,
+        url: `http://api.openweathermap.org/data/2.5/weather?zip=${zip},us&units=imperial&appid=${process.env.MYKEY}`,
         dataType: "json",
         success: function (wallOfText) {
           let city = wallOfText.name;
